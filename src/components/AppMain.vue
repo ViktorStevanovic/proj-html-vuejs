@@ -1,6 +1,7 @@
 <template>
-    <i class="fa-solid fa-cat"></i>
-    <h1>h</h1>
+    <main>
+        
+    </main>
 </template>
 <script>
 export default {
