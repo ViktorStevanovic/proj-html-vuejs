@@ -4,19 +4,21 @@
         <section class="container-fluid story-section">
             <p class="my-subtitle">Who we are</p>
             <h1 class="my-title">Sense the jazz</h1>
-            <p>The story of Jazz And Blues Society Of Determination, Passion, Idealism, Community, And Of Course, Music. Founded In 1985 And Incorporated In 1986, As A Community Based, Not-For-Profit, Charitable Arts Organization Located In Vancouver, British Columbia, The Society, From The Very Beginning, Has Worked Diligently To Establish Vancouver As A Centre For The Creation And Exchange Of Sounds And Ideas Between The Local, National And International Music Communities.</p>
+            <p class="story-info">The story of Jazz And Blues Society Of Determination, Passion, Idealism, Community, And Of Course, Music. Founded In 1985 And Incorporated In 1986, As A Community Based, Not-For-Profit, Charitable Arts Organization Located In Vancouver, British Columbia, The Society, From The Very Beginning, Has Worked Diligently To Establish Vancouver As A Centre For The Creation And Exchange Of Sounds And Ideas Between The Local, National And International Music Communities.</p>
             <button class="my-button">Read More</button>
         </section>
+
         <!-- VIDEO PLAYER SECTION -->
-        <section class="video-section">
+        <section class="video-section container-fluid">
             <img src="../assets/Video.jpg" alt="">
             <div class="player">
                 <img src="../assets/play-circle.svg" alt="media player image">
                 <h1 class="my-title">New music video</h1>
             </div>
         </section>
+
         <!-- ALBUM CARDS SECTION -->
-        <section class="album-section">
+        <section class="album-section container-fluid">
             <div class="text-center">
                 <p class="my-subtitle">who we are</p>
                 <h1 class="my-title">Sense the jazz</h1>
@@ -27,6 +29,7 @@
                 </article>
             </div>
         </section>
+
         <!-- NEW ALBUM SECTION -->
         <section class="new-album-section container-fluid">
             <div class="new-album-info">
@@ -35,8 +38,9 @@
                 <button class="my-button">Read more</button>
             </div>
         </section>
+
         <!-- STATISTICS SECTION -->
-        <section class="statistics-section">
+        <section class="statistics-section container-fluid">
             <article class="statistic">
                 <img src="../assets/image (13).svg" alt="concerts icon">
                 <h1 class="m-0">163</h1>
@@ -44,22 +48,23 @@
             </article>
             <article class="statistic">
                 <img src="../assets/image (14).svg" alt="concerts icon">
-                <h1 class="m-0">163</h1>
-                <p class="m-0">concerts</p>
+                <h1 class="m-0">145</h1>
+                <p class="m-0">Happy Clients</p>
             </article>
             <article class="statistic">
                 <img src="../assets/image (15).svg" alt="concerts icon">
-                <h1 class="m-0">163</h1>
-                <p class="m-0">concerts</p>
+                <h1 class="m-0">72</h1>
+                <p class="m-0">Music Awards</p>
             </article>
             <article class="statistic">
                 <img src="../assets/image (16).svg" alt="concerts icon">
-                <h1 class="m-0">163</h1>
-                <p class="m-0">concerts</p>
+                <h1 class="m-0">182</h1>
+                <p class="m-0">Total songs</p>
             </article>
         </section>
+
         <!-- BLOG SECTION -->
-        <section class="blog-section">
+        <section class="blog-section container-fluid">
             <div class="text-center">
                 <p class="my-subtitle">music blog</p>
                 <h1 class="my-title">Best music blog</h1>
@@ -71,6 +76,17 @@
             </div>
         </section>
 
+        <!-- INSTAGRAM POSTS SECTION -->
+        <section class="insta-posts container-fluid">
+            <img src="../assets/instagram_img4.jpg" alt="instagram post4" class="single-post">
+            <img src="../assets/instagram_img5.jpg" alt="instagram post5" class="single-post">
+            <img src="../assets/instagram_img6.jpg" alt="instagram post6" class="single-post">
+            <img src="../assets/instagram_img7.jpg" alt="instagram post7" class="single-post">
+            <img src="../assets/instagram_img8.jpg" alt="instagram post8" class="single-post">
+            <img src="../assets/instagram_img9.jpg" alt="instagram post9" class="single-post">
+            <img src="../assets/instagram_img10.jpg" alt="instagram post10" class="single-post">
+            <img src="../assets/instagram_img1.jpg" alt="instagram post1" class="single-post">
+        </section>
     </main>
 </template>
 <script>
@@ -128,6 +144,9 @@ export default {
         p{
             width: 73ch;
         }
+        .story-info{
+            color: gray;
+        }
     }
     .video-section{
         position: relative;
@@ -183,5 +202,8 @@ export default {
         p{
             text-transform: uppercase;
         }
+    }
+    .single-post{
+        width: calc(100% / 8);
     }
 </style>

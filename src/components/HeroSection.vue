@@ -1,7 +1,7 @@
 <template>
-    <section class="hero-section">
+    <section class="hero-section container-fluid">
         <!-- NAVBAR SECTION -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid d-flex justify-content-between">
                 <a class="navbar-brand" href="#"><img src="../assets/Logo.png" alt="Lyricsmus main logo"></a>      
                 <div>
