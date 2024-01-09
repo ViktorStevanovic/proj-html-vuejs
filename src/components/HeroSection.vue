@@ -14,12 +14,11 @@
         </nav>
         <!-- JUMBOTRON SECTION -->
         <div class="jumbo-class">
-            <p class="m-0">Instrumental rock</p>
+            <p class="m-0 my-subtitle">Instrumental rock</p>
             <h1 class="m-0">Music in this video</h1>
             <button class="my-button">Read more</button>
         </div>
         <!-- CARDS SECTION -->
-        s
     </section>
 </template>
 <script>
@@ -95,8 +94,9 @@ export default {
         background-position: center;
         background-size: cover;
         text-transform: uppercase;
-        p{
-            color: $orange;
+
+        h1{
+            font-size: 4rem;
         }
 
     }
