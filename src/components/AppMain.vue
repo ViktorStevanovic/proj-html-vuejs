@@ -20,9 +20,11 @@
                 <p class="my-subtitle">who we are</p>
                 <h1 class="my-title">Sense the jazz</h1>
             </div>
-            <article v-for="(album, index) in store.albumList" :key="index">
-                <AlbumCard :album="album"/>
-            </article>
+            <div class="album-container">
+                <article v-for="(album, index) in store.albumList" :key="index" class="single-album">
+                    <AlbumCard :album="album"/>
+                </article>
+            </div>
         </section>
         
     </main>
@@ -44,6 +46,22 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+    .album-section{
+        width: 80%;
+        margin: 5rem auto;
+        h1{
+            margin-bottom: 2rem;
+        }
+    }
+    .album-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        .single-album{
+            width: calc((100% / 3) - 2rem);
+        }
+   }
     .story-section{
         display: flex;
         flex-direction: column;
