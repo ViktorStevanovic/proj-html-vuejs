@@ -28,7 +28,6 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-
     .album-card{
         width: 100%;
         text-align: center;

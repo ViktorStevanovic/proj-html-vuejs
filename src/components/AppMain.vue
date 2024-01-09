@@ -58,16 +58,31 @@
                 <p class="m-0">concerts</p>
             </article>
         </section>
+        <!-- BLOG SECTION -->
+        <section class="blog-section">
+            <div class="text-center">
+                <p class="my-subtitle">music blog</p>
+                <h1 class="my-title">Best music blog</h1>
+            </div>
+            <div class="blog-container">
+                <article v-for="(blog, index) in store.blogList" :key="index" class="single-blog">
+                    <BlogCard :blog="blog"/>
+                </article>
+            </div>
+        </section>
+
     </main>
 </template>
 <script>
 import AlbumCard from './AlbumCard.vue';
+import BlogCard from './BlogCard.vue';
 import { store } from '../js/store';
 
 export default {
     name:'AppMain',
     components:{
         AlbumCard,
+        BlogCard,
     },
     data() {
         return {
@@ -77,7 +92,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-    .album-section{
+    .album-section, .blog-section{
         width: 80%;
         margin: 5rem auto;
         h1{
@@ -92,6 +107,14 @@ export default {
         .single-album{
             width: calc((100% / 3) - 2rem);
         }
+   }
+   .blog-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    .single-blog{
+        width: 30%;
+    }
    }
     .story-section{
         display: flex;
