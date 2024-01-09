@@ -1,49 +1,13 @@
 <template>
     <section class="hero-section">
         <!-- NAVBAR SECTION -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid d-flex justify-content-between">
-                <a class="navbar-brand" href="#">Navbar</a>      
+                <a class="navbar-brand" href="#"><img src="../assets/Logo.png" alt="Lyricsmus main logo"></a>      
                 <div>
-                    <ul class="navbar-nav gap-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
-                        </li> 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Events
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact us</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Shop
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li >
-                            <img src="../assets/image(8).svg" alt="">
-                        </li>
+                    <ul class="navbar-nav gap-5">
+                        <li v-for='link in navLinks' :class="(link.active) ? 'active' : ''">{{ link.name }} </li>
+                        <li><img src="../assets/image (8).svg" alt="search icon"></li>
                     </ul>
                 </div>
             </div>
@@ -52,7 +16,7 @@
         <div class="jumbo-class">
             <p class="m-0">Instrumental rock</p>
             <h1 class="m-0">Music in this video</h1>
-            <button>Read more</button>
+            <button class="my-button">Read more</button>
         </div>
         <!-- CARDS SECTION -->
         s
@@ -61,6 +25,47 @@
 <script>
 export default {
     name:'HeroSection',
+    data() {
+        return {
+            navLinks: [
+                {
+                    name: 'Home',
+                    url: '#',
+                    active: true
+                },
+                {
+                    name: 'Blog',
+                    url: '#',
+                    active: false
+                },
+                {
+                    name: 'Events',
+                    url: '#',
+                    active: false
+                },
+                {
+                    name: 'Gallery',
+                    url: '#',
+                    active: false
+                },
+                {
+                    name: 'About us',
+                    url: '#',
+                    active: false
+                },
+                {
+                    name: 'Contacts us',
+                    url: '#',
+                    active: false
+                },
+                {
+                    name: 'Shop',
+                    url: '#',
+                    active: false
+                },
+            ]
+        }
+    },
 }
 </script>
 <style lang="scss" scoped>
@@ -68,6 +73,15 @@ export default {
 
     nav{
         text-transform: uppercase;
+        img{
+            width: 85%;
+        }
+        li img{
+            width: 100%;
+        }
+        .active{
+            color: $orange;
+        }
     }
     .jumbo-class{
         display: flex;
@@ -81,7 +95,6 @@ export default {
         background-position: center;
         background-size: cover;
         text-transform: uppercase;
-        color: $white;
         p{
             color: $orange;
         }
