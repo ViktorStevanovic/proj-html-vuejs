@@ -128,6 +128,7 @@ export default {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    padding-bottom: 2rem;
     .single-blog{
         width: 30%;
     }
