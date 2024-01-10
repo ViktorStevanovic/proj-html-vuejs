@@ -15,6 +15,9 @@ body{
     background-color: transparent;
     color: $white;
     text-transform: uppercase;
+    &:hover {
+        background-color:$orange;
+    }
 }
 
 .my-subtitle{

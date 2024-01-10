@@ -140,7 +140,7 @@ export default {
         justify-content: end;
         align-items: center;
         text-align: center;
-        padding-top: 15rem;
+        padding-top: 20rem;
         padding-bottom: 7rem;
         p{
             width: 73ch;
