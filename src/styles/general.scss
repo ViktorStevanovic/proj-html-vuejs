@@ -1,12 +1,14 @@
 @use './partials/variables' as *;
 @use './partials/mixins' as *;
 
+
 *{
     @include reset;
 }
 body{
     background-color: black !important;
     color: $white !important;
+    font-family: 'Roboto', sans-serif;
 }
 
 .my-button{
