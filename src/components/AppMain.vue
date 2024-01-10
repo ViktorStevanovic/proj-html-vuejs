@@ -127,7 +127,7 @@ export default {
    .blog-container{
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 2rem;
     padding-bottom: 2rem;
     .single-blog{
         width: 30%;
@@ -172,6 +172,9 @@ export default {
         background-image: url(../assets/cms_parallax.jpg);
         background-position: center;
         background-size: cover;
+        h1{
+            font-size: 4rem;
+        }
     }
     .new-album-info{
         display: flex;
