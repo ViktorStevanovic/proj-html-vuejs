@@ -26,8 +26,8 @@ export default {
 </script>
 <style lang="scss">
     @use './styles/general.scss';
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-    #app {
-    font-family: 'Roboto', sans-serif;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;700&display=swap');
+    #app{
+      font-family: 'Roboto Condensed', sans-serif;
+    }
 </style>

@@ -20,11 +20,11 @@
         },
         {
             thumb: '/src/assets/gallery5.jpg',
-            title: 'Soundis the spark of time'
+            title: 'Sound is the spark of time'
         },
         {
             thumb: '/src/assets/gallery6.jpg',
-            title: 'Make your nigth groovy'
+            title: 'Make your night groovy'
         },
 
     ],

@@ -164,7 +164,8 @@ export default {
         text-transform: uppercase;
 
         h1{
-            font-size: 4rem;
+            font-size: 5rem;
+            font-weight: 500;
         }
 
     }
