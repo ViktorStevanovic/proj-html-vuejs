@@ -49,4 +49,5 @@ export default {
     .platform-icons img{
         margin: 0px 2px;
     }
+
 </style>

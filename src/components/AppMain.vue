@@ -126,7 +126,7 @@ export default {
    }
    .blog-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 1rem;
     padding-bottom: 2rem;
     .single-blog{
