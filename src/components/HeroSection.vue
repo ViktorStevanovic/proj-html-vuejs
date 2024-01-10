@@ -6,11 +6,13 @@
                 <a class="navbar-brand" href="#"><img src="../assets/Logo.png" alt="Lyricsmus main logo"></a>      
                 <div>
                     <ul class="navbar-nav gap-5">
-                        <li v-for='link in navLinks' :class="(link.active) ? 'active' : '' || (link.dropdown) ? 'dropdown-toggle dropdown' :'' " :data-bs-toggle="(link.dropdown) ? 'dropdown' :''">{{ link.name }} </li>
+                        <li  v-for='link in navLinks' :class="(link.active) ? 'active' : '' || (link.dropdown) ? 'dropdown-toggle dropdown' :'' " :data-bs-toggle="(link.dropdown) ? 'dropdown' :''"> {{ link.name }} </li>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Menu item</a></li>
-                            <li><a class="dropdown-item" href="#">Menu item</a></li>
-                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Choral music</a></li>
+                            <li><a class="dropdown-item" href="#">Concert Band</a></li>
+                            <li><a class="dropdown-item" href="#">Opera concerts</a></li>
+                            <li><a class="dropdown-item" href="#">Symphony orchestra</a></li>
+                            <li><a class="dropdown-item" href="#">Family concerts</a></li>
                         </ul>
                         <li><img src="../assets/image (8).svg" alt="search icon"></li>
                     </ul>
@@ -89,7 +91,8 @@ export default {
                 {
                     name: 'Shop',
                     url: '#',
-                    active: false
+                    active: false,
+                    dropdown: true
                 },
             ]
         }
@@ -106,6 +109,9 @@ export default {
     nav{
         text-transform: uppercase;
         padding: 1rem;
+        li{
+            cursor: pointer;
+        }
         img{
             width: 85%;
         }
@@ -116,9 +122,24 @@ export default {
             color: $orange;
         }
         .dropdown-menu{
-            background-color: gray;
+            background-color: #1F1F1F;
             position: absolute;
-            left: 66%;
+            left: 71%;
+            top: 97%;
+            width: 300px;
+            padding: .25rem;
+            cursor: pointer;
+            li a{
+                color: $white;
+                border-bottom: 1px solid gray;
+                padding: 1rem;
+                &:hover{
+                    background-color: $orange;
+                }
+            }
+            li:last-child a{
+                border: none;
+            }
         }
     }
     .jumbo-class{

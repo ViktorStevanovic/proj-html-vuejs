@@ -1,7 +1,7 @@
 <template>
     <footer class="container-fluid">
         <section class="upper-footer">
-            <div v-for="info in bookingList" :key="index" class="bookings">
+            <div v-for="info in bookingList" class="bookings">
                 <h3>Bookings</h3>
                 <p>{{ info.address }}</p>
                 <p>T: {{ info.tel }}</p>
